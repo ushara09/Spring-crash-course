@@ -20,14 +20,14 @@ public class CruddemoApplication {
 	public CommandLineRunner commandLineRunner(StudentDAO studentDAO){ //execute after the spring beans have been loaded
 		return runner -> {
 //			createStudent(studentDAO);
-//			createMultipleStudents(studentDAO);
+			createMultipleStudents(studentDAO);
 //			readStudent(studentDAO);
 //			queryForStudents(studentDAO);
 //			queryForStudentsByLastName(studentDAO);
 //			updateStudent(studentDAO);
 //			deleteStudent(studentDAO);
 //			deleteStudentByLastName(studentDAO);
-			deleteAllStudents(studentDAO);
+//			deleteAllStudents(studentDAO);
 		};
 	}
 
